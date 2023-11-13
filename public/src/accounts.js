@@ -1,8 +1,10 @@
+// returns  account that matches the given id
 function findAccountById(accounts, id) {
   let foundId = accounts.find((account) => account.id === id)
   return foundId
 }
 
+// lists the accounts in alphabetical order by last name
 function sortAccountsByLastName(accounts) {
   let sorted = accounts.sort((accountA, accountB) => 
   accountA.name.last.toLowerCase() < accountB.name.last.toLowerCase() ? -1 : 1)
